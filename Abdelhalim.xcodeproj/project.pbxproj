@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04871F2B2347BBAE00C8024E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04871F2A2347BBAE00C8024E /* AppDelegate.swift */; };
-		04871F2D2347BBAE00C8024E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04871F2C2347BBAE00C8024E /* SceneDelegate.swift */; };
 		04871F2F2347BBAE00C8024E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04871F2E2347BBAE00C8024E /* ViewController.swift */; };
 		04871F322347BBAE00C8024E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04871F302347BBAE00C8024E /* Main.storyboard */; };
 		04871F342347BBAF00C8024E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04871F332347BBAF00C8024E /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		04871F272347BBAE00C8024E /* Abdelhalim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abdelhalim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04871F2A2347BBAE00C8024E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04871F2C2347BBAE00C8024E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04871F2E2347BBAE00C8024E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04871F312347BBAE00C8024E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04871F332347BBAF00C8024E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				04871F2A2347BBAE00C8024E /* AppDelegate.swift */,
-				04871F2C2347BBAE00C8024E /* SceneDelegate.swift */,
 				04871F2E2347BBAE00C8024E /* ViewController.swift */,
 				04871F302347BBAE00C8024E /* Main.storyboard */,
 				04871F332347BBAF00C8024E /* Assets.xcassets */,
@@ -140,7 +137,6 @@
 			files = (
 				04871F2F2347BBAE00C8024E /* ViewController.swift in Sources */,
 				04871F2B2347BBAE00C8024E /* AppDelegate.swift in Sources */,
-				04871F2D2347BBAE00C8024E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32582GJDQG;
 				INFOPLIST_FILE = Abdelhalim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amadonsoft.Abdelhalim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32582GJDQG;
 				INFOPLIST_FILE = Abdelhalim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amadonsoft.Abdelhalim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
