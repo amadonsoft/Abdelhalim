@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y3s-Gg-phS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aPf-Px-ghh">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--عبد الحليم حافظ-->
         <scene sceneID="11M-bn-Ulg">
             <objects>
                 <tableViewController id="y3s-Gg-phS" customClass="TableViewController" customModule="Abdelhalim" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Mz3-LI-GEy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellSong" id="Mz3-LI-GEy">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mz3-LI-GEy" id="FPI-nG-ZgC">
@@ -30,10 +31,50 @@
                             <outlet property="delegate" destination="y3s-Gg-phS" id="Wys-BA-vea"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="عبد الحليم حافظ" id="GEb-Ik-Xdo">
+                        <barButtonItem key="backBarButtonItem" title="رجوع" id="GIS-Sh-anP"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="vZL-Sb-Unj" kind="show" identifier="segSong" id="xKQ-d3-GCP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eip-5D-Zoa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-419" y="83"/>
+            <point key="canvasLocation" x="486.95652173913049" y="82.33695652173914"/>
+        </scene>
+        <!--Play Song-->
+        <scene sceneID="BeW-mX-JkH">
+            <objects>
+                <viewController id="vZL-Sb-Unj" customClass="playSong" customModule="Abdelhalim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wC4-vS-Ip9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cZH-1t-hsM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nbd-Hn-xyS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wbj-K0-Vg0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ftc-wr-QPx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aPf-Px-ghh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Flp-xy-4L6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y3s-Gg-phS" kind="relationship" relationship="rootViewController" id="ty7-LJ-YIT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haL-rB-u60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326" y="82"/>
         </scene>
     </scenes>
 </document>

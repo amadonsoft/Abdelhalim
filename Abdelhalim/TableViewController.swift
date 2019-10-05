@@ -30,4 +30,10 @@ class TableViewController: UITableViewController {
         // Configure the cell...
         return cell
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let songName = songs[indexPath.row]
+        print (songName)
+        performSegue(withIdentifier: "segSong", sender: songName)
+        
+    }
 }
